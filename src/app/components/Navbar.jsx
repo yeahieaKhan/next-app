@@ -1,13 +1,14 @@
+import Link from "next/link";
 import React from "react";
 
 function Navbar(props) {
   const links = (
     <>
       <li>
-        <a>Home</a>
+        <Link href="/home"> Home</Link>
       </li>
       <li>
-        <a>About</a>
+        <Link href="/about">About</Link>
       </li>
       <li>
         <a>Services</a>
