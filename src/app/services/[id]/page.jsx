@@ -1,6 +1,6 @@
 import React from "react";
 
-function page({ params }) {
+function ServicesDetails({ params }) {
   const id = params.id;
 
   return (
@@ -11,4 +11,4 @@ function page({ params }) {
   );
 }
 
-export default page;
+export default ServicesDetails;
