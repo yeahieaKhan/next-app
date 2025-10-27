@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function ServicesPage() {
@@ -74,8 +75,10 @@ function ServicesPage() {
 
       {services.map((data) => {
         return (
-          <div>
-            <h2>{data.category}</h2>
+          <div key={data.id}>
+            <Link href={`/services/${data.id}`}>
+              <h2 className="border border-amber-300">{data.category}</h2>
+            </Link>
           </div>
         );
       })}
